@@ -62,7 +62,7 @@ def main():
     args = parser.parse_args()
 
     params = {
-        "connection_class": RequestsHttpConnection,
+        "connection_class": ProxyConnection,
         "auth": (),
         "hosts": [args.url],
     }
